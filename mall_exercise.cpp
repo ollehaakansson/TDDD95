@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <cassert>
 #include <cmath>
-// #include <cstudio>
+// #include <cstdio>
 #include <cstdlib>
 #include <cstring>
 #include <functional>
@@ -21,6 +21,8 @@ typedef vector <int> vi;
 
 int main(int argc, char* argv[])
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
 
     return 0;
 }

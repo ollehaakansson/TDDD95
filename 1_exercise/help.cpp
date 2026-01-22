@@ -21,6 +21,10 @@ typedef vector <int> vi;
 
 int main(int argc, char* argv[])
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    // orkar ej med denna nu, den va ju svår.
 
     return 0;
 }
