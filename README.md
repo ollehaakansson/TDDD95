@@ -1,7 +1,14 @@
 # TDDD95
 
-
-Points: <br />
+Grade is calculated from average, so grade 4 in exercises combined with grade 3 in labs is a grade 4 for the course. <br />
+<br />
+Points exercises for grade 4: <br />
 A: 1 /13 <br />
 B: 1 / 7 <br />
-C: 0 / 6 
+C: 0 / 6 <br />
+
+Points labs: <br />
+For grade 3: 0 /20 <br />
+For grade 4: 0 /30 <br />
+For grade 5: 0 /40 <br />
+
