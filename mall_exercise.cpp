@@ -21,6 +21,7 @@ typedef vector <int> vi;
 
 int main(int argc, char* argv[])
 {
+    // Optimimerar I/O
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
