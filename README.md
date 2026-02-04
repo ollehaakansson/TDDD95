@@ -3,7 +3,7 @@
 Grade is calculated from average, so grade 4 in exercises combined with grade 3 in labs is a grade 4 for the course. <br />
 <br />
 Points exercises for grade 4: <br />
-A: 2 /13 <br />
+A: 3 /13 <br />
 B: 1 / 7 <br />
 C: 0 / 6 <br />
 

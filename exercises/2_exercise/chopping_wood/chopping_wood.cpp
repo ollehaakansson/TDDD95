@@ -79,6 +79,62 @@ int main(int argc, char* argv[])
         }
     }
 
+    // Kontrollera att det träd vi byggt genererar exakt samma
+    // sekvens om man alltid tar bort minsta lövet.
+
+    vector<vector<int>> adj(n + 2);
+    vector<int> verify_degree(n + 2, 0);
+
+    for (int i = 0; i < n; ++i) {
+        int u = result[i];   // Lövet vi gissade på
+        int w = node[i];        // Grannen från indatan
+        adj[u].push_back(w);
+        adj[w].push_back(u);
+        verify_degree[u]++;
+        verify_degree[w]++;
+    }
+
+    // Simulera processen med det byggda trädet
+    ptr = 1;
+    while (ptr <= n + 1 && verify_degree[ptr] != 1) {
+        ptr++;
+    }
+    
+    int check_leaf = ptr;
+    vector<bool> removed_nodes(n + 2, false); // Håll koll på borttagna noder
+
+    for (int i = 0; i < n; ++i) {
+        // Hitta vem nuvarande löv är kopplat till (som inte är borttagen)
+        int neighbor = -1;
+        for (int candidate : adj[check_leaf]) {
+            if (!removed_nodes[candidate]) {
+                neighbor = candidate;
+                break;
+            }
+        }
+
+        // Stämmer grannen i vårt träd med grannen i indatan?
+        // Om nej: Då var trädstrukturen omöjlig för den givna ordningen.
+        if (neighbor != node[i]) {
+            cout << "Error" << "\n";
+            return 0;
+        }
+
+        // Ta bort lövet
+        removed_nodes[check_leaf] = true;
+        verify_degree[neighbor]--;
+
+        // Hitta nästa löv
+        if (verify_degree[neighbor] == 1 && neighbor < ptr) {
+            check_leaf = neighbor;
+        } else {
+            while (ptr <= n + 1 && (verify_degree[ptr] != 1 || removed_nodes[ptr])) {
+                ptr++;
+            }
+            check_leaf = ptr;
+        }
+    }
+
     //resultat
     for (int i = 0; i < n; i++) {
         cout << result[i] << "\n";
