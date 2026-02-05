@@ -4,8 +4,8 @@ Grade is calculated from average, so grade 4 in exercises combined with grade 3 
 <br />
 Points exercises for grade 4: <br />
 A: 3 /13 <br />
-B: 1 / 7 <br />
-C: 0 / 6 <br />
+B: 3 / 7 <br />
+C: 1 / 6 <br />
 
 Points labs: <br />
 For grade 3: 0 /20 <br />
