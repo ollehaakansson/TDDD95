@@ -8,7 +8,7 @@ B: 3 / 7 <br />
 C: 1 / 6 <br />
 
 Points labs: <br />
-For grade 3: 0 /20 <br />
+For grade 3: 3 /20 <br />
 For grade 4: 0 /30 <br />
 For grade 5: 0 /40 <br />
 
