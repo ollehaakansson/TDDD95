@@ -21,7 +21,7 @@ Compile with:
 g++ -O2 -Wall file_name.cpp -o main
 
 Run with:
-./file_name < input.txt
+./main < input.txt
 */
 using namespace std;
 typedef vector <int> vi;
